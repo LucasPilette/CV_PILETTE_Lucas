@@ -34,11 +34,11 @@ body{
 }
 
 .title>h1{
-    font-size: 6.5rem;
+    font-size: 5.5vw;
     color: white;
     font-family: 'Monument Extended', sans-serif;
     font-weight: lighter;
-    margin: 2% 0%;
+    margin: 2% 1%;
 }
 
 .greenEffect{
@@ -64,10 +64,262 @@ body{
 
 .navMenu>ul>li{
     display: inline-block;
-    font-size: 1.5rem;
     font-family: 'Monument Extended', sans-serif;
-    font-weight: bold;
     padding: 0% 10px;
 }
 
 
+/* ANIMATION MENU  */
+
+.menu__item {
+    position: relative;
+    padding: 0 6vw;
+}
+
+.menu__item-link {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    -webkit-text-stroke: 1.5px #ffff;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: opacity 0.4s;
+}
+
+.menu__item-link::before {
+    all: initial;
+    font-family: sofia-pro, sans-serif;
+    counter-increment: menu;
+    position: absolute;
+    bottom: 60%;
+    left: 0;
+    pointer-events: none;
+}
+
+.menu__item-link:hover {
+    transition-duration: 0.1s;
+    opacity: 0;
+}
+
+.menu__item-img {
+    pointer-events: none;
+    position: absolute;
+    height: 280%;
+    max-height: 400px;
+    opacity: 0;
+    left: 125%;
+    top: 60%;
+    transform: translate3d(calc(-390% - 6vw), -25%, 0) translate3d(0, 20px, 0);
+}
+
+.menu__item-link:hover+.menu__item-img {
+    opacity: 1;
+    transform: translate3d(calc(-390% - 6vw), -25%, 0) rotate3d(0, 0, 1, 4deg);
+    transition: all 0.4s;
+    z-index: 5 ;
+}
+
+.menu {
+    padding: 0.05em 0 0.05em;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    font-size: 1em;
+}
+
+.marquee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #FD2155;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.menu__item-link:hover~.marquee .marquee__inner {
+    animation-play-state: running;
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+
+.menu__item-link,
+.marquee span {
+    white-space: nowrap;
+    font-size: 1em;
+    padding: 0 0vw;
+    font-weight: 900;
+    line-height: 1.15;
+}
+
+.marquee span {
+    font-style: italic;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .text_effect {
+        top: 4%;
+        left: 10%;
+        font-size: 110%;
+    }
+
+    a {
+        color: #08FDD8;
+    }
+
+    .age {
+        font-size: 150%;
+    }
+
+    .location {
+        font-size: 170%;
+    }
+
+    .project_title {
+        font-size: 190%;
+        color: #08FDD8;
+    }
+
+    .project_title2 {
+        font-size: 190%;
+        color: #08FDD8;
+    }
+
+    #web_dev {
+        color: #FD2155;
+    }
+
+    .picture {
+        margin-left: 0;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    a {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .bio {
+        margin-right: 5vw;
+    }
+
+    .skills {
+        padding: 0 0 0 4em;
+    }
+
+    .links {
+        padding-top: 1em;
+        font-size: 1.3em;
+    }
+    .second {
+        margin-right: 5vw;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .navbar {
+        position: fixed;
+    }
+}
+
+@media screen and (max-width:576px){
+    .navbarDiv{
+        position: fixed;
+        top: 40px;
+        z-index: 9999;
+        transition: 300ms ease;
+    }
+    .navbarDiv-after{
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        transition: 300ms ease;
+    }
+    .navbar{
+        width: 93%;
+        justify-content: space-around;
+    }
+
+    .ageLoc{
+        margin-top: 5%;
+    }
+}
+
+.rollingMenu{
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 5.5vw;
+}
+
+/* AGE ET LOCATION */
+
+
+.ageLocationDiv{
+    font-family: 'Monument Extended', sans-serif;
+    margin-left: 60%;
+    display: flex;
+}
+
+.arrow {
+    width: 6vw;
+    height: auto;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(36deg) brightness(102%) contrast(105%);
+    display: flex;
+    justify-content: end;
+}
+
+.age{
+    font-size: 175%;
+    margin: 1.5rem 0 0 2rem;
+}
+
+.location{
+    font-size: 225%;
+    margin-left: 2rem;
+    padding-top: .75rem;
+}
+
+.animated {
+    background: linear-gradient(to right, #CCC 50%, #2bfcdc 50%, #08FDD8);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease-out;
+}
+
+.animated:hover {
+    background-position: -100%;
+}

@@ -21,6 +21,31 @@
                 </ul>
             </div>
         </div>
+        <div class="rollingMenu">
+        <nav class="menu d-none d-md-inline">
+            <div class="menu__item">
+                <a class="menu__item-link">Lucas Pilette </a>
+                <img class="menu__item-img" src="/public/src/photolucas.jpg" alt="Photo de Lucas Pilette"/>
+                <div class="marquee">
+                    <div class="marquee__inner">
+                        <span>Lucas Pilette &nbsp;</span>
+                        <span>Lucas Pilette &nbsp;</span>
+                        <span>Lucas Pilette &nbsp;</span>
+                        <span>Lucas Pilette &nbsp;</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <div class="ageLocationDiv">
+            <div class="arrowSvg">
+                <img class="arrow" src="/public/src/flecheBlanche.svg" alt="logo de flèche blanc">
+            </div>
+            <div class="ageLoc">
+                <p class="age animated">22 ans</p>
+                <p class="location animated">Amiens</p>
+            </div>
+        </div>
         
     </header>
 
