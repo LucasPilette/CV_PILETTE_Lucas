@@ -22,9 +22,15 @@
 
 body{
     background-color: rgb(22, 22, 22);
+    height: 300vh;
+    font-family: 'Univia Pro', sans-serif; 
+    color: white;
 }
 
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 /* CONTENU HEADER  */
 
@@ -45,15 +51,14 @@ body{
     color: var(--green-Effect);
 }
 
+.pinkEffect{
+    color: var(--pink-Effect);
+}
+
 .headerContent{
     display: flex;
 }
 
-.navMenu{
-    width: 25%;
-    display: flex;
-    align-items: center;
-}
 
 .navMenu>ul{
     list-style: none;
@@ -66,6 +71,34 @@ body{
     display: inline-block;
     font-family: 'Monument Extended', sans-serif;
     padding: 0% 10px;
+    transition: 200ms;
+}
+
+
+.navMenu>ul>li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #FD2155;
+}
+
+.navMenu{
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    top: 5%;
+    left: 75vw;
+    transition:  all 400ms ease;
+    background-color: rgb(22, 22, 22);
+}
+
+#navMenuAfter{
+    height: 70px;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+    font-size: 120%;
+    z-index: 500;
 }
 
 
@@ -135,6 +168,7 @@ body{
     color: #FD2155;
     pointer-events: none;
     mix-blend-mode: difference;
+    width: 100%;
 }
 
 .marquee__inner {
@@ -303,7 +337,7 @@ body{
 
 .age{
     font-size: 175%;
-    margin: 1.5rem 0 0 2rem;
+    margin: 1rem 0 0 2rem;
 }
 
 .location{
@@ -322,4 +356,155 @@ body{
 
 .animated:hover {
     background-position: -100%;
+}
+
+
+/* COMPETENCES SKILL BARS */
+
+
+.aboutMe{
+    font-family: 'Univia Pro', sans-serif; 
+    color: white;
+    display: flex;
+}
+
+.textBio{
+    width: 50%;
+    padding-top: 1rem;
+    margin-left: 8.5%;
+}
+
+.bio {
+    margin-top: 10vw;
+    font-size: 1.6rem;
+    text-align: start;
+    line-height: 150%;
+}
+
+.listItem{
+    list-style-type: none;
+    margin: 2em 0;
+    font-size: 1.7rem;
+}
+
+.listItem>h3{
+    padding-left:1rem;
+    margin-bottom: 1rem;
+}
+
+.comps {
+    font-size: 180%;
+    text-align: center;
+}
+
+.skills {
+    width: 35%;
+    margin: 2em auto;
+    padding: 0 0 0 4em;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #FD2155;
+}
+
+.bar span {
+    height: 2px;
+    float: left;
+    background: #FD2155;
+    border-radius: 3px;
+}
+
+.html {
+    width: 80%;
+    animation: html 2s;
+}
+
+.CSS {
+    width: 80%;
+    animation: CSS 2s;
+}
+
+.Javascript {
+    width: 90%;
+    animation: Javascript 2s;
+}
+
+.PHP {
+    width: 85%;
+    animation: PHP 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes CSS {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes Javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes PHP {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+
+/* CV PDF */
+
+.pdf1 {
+
+    margin-top: 5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Monument Extended', sans-serif;
+}
+
+.pdf1:hover{
+    color: var(--pink-Effect);
+}
+
+/* STACKS */
+
+.stacks{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.elemStacks{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgStacks{
+    height: 50px;
 }

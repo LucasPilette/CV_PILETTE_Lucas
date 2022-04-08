@@ -48,7 +48,3 @@
         </div>
         
     </header>
-
-    
-</body>
-</html>
