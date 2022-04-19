@@ -219,10 +219,6 @@ a{
         font-size: 110%;
     }
 
-    a {
-        color: #08FDD8;
-    }
-
     .age {
         font-size: 150%;
     }
@@ -507,4 +503,118 @@ a{
 
 .imgStacks{
     height: 50px;
+}
+
+/* FORMULAIRE DE CONTACT */
+
+form> * ::placeholder{
+    font-family: 'Univia Pro', sans-serif; 
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact>h2{
+    font-size: 190%;
+}
+
+.contact>form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+textarea{
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#button {
+    background: #08FDD8;
+    color: #000;
+    transition: 0.1s;
+    border: none;
+}
+
+#button:hover {
+    background: #000;
+    color: #08FDD8;
+    border: solid 1px #08FDD8;
+    cursor: pointer;
+}
+
+.mailLink {
+    filter: invert(32%) sepia(100%) saturate(5411%) hue-rotate(335deg) brightness(104%) contrast(98%);
+    height: 1.5em;
+}
+
+
+form>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+}
+
+.names{
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.names>div{
+    display: flex;
+    width: 22.5%;
+    margin: 0 10px;
+    flex-wrap: wrap;
+}
+
+.names>div>label{
+    width: 100%;
+}
+
+.lastname{
+    align-items: end;
+}
+
+input[type=email]{
+    width: 45%;
+}
+input[type=text]{
+    width: 100%;
+}
+
+textarea{
+    width: 45%;
 }
