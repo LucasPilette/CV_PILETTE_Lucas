@@ -1,5 +1,7 @@
 <?php
 
+define('REG_EXP_NAME', '^[a-zA-ZÀ-ÿ\. \-\']*$' );
+
 $logos = [
     (object)['source' => '/public/src/html.png','alt' => 'logo HTML'],
     (object)['source' => '/public/src/css.png','alt' => 'logo CSS'],

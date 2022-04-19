@@ -40,38 +40,43 @@
     <div class="pdf1">
         <a href="/public/pdf/PILETTE Lucas.pdf" id="pdf" download="CV Pilette Lucas"> Télécharger mon CV en PDF</a>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <h2>Contact</h2>
         <h3>Un projet ? Une question ? N'hésitez pas à me <span class="greenEffect">contacter</span></h3>
         <form  method="post" class="contactForm">
             <div>
                 <label for="mailAdress">Adresse Mail</label>
                 <input type="email" placeholder="exemple@email.com" name="mailAdress">
-                <span>Je vous recontacterai via cet adresse mail</span>
+                <span class="pinkEffect"><?= $errors['email'] ?? '' ?></span>
+                <span class="contactMail">Je vous recontacterai via cet adresse mail</span>
             </div>
             <div class="names">
                 <div class="lastname">
                     <label for="lastname">Nom</label>
                     <input type="text" placeholder="Nom" name="lastname">
+                    <span class="pinkEffect"><?= $errors['lastname'] ?? '' ?></span>
                 </div>
                 
                 
                 <div class="firstname">
                     <label for="firstname">Prénom</label>
                     <input type="text" placeholder="Prénom" name="firstname">
+                    <span class="pinkEffect"><?= $errors['firstname'] ?? '' ?></span>
                 </div>
                 
             </div>
             <div>
                 <label for="content">Votre message</label>
                 <textarea cols="30" rows="5" placeholder="Veuillez renseigner votre message..." name="content"></textarea>
+                <span class="pinkEffect"><?= $errors['content'] ?? '' ?></span>
             </div>
-            <div>
+            <div class="submitButton">
                 <input type="submit" value="Envoyer" id="button">
             </div>
+            <span class="greenEffect state"><?= $state ?? '' ?></span>
         </form>
     </div>
     <div class="links">

@@ -7,7 +7,7 @@
     <title>PILETTE Lucas - Curriculum Vitae</title>
     <link rel="stylesheet" href="/public/css/styleHome.css">
 </head>
-<body>
+<body id="about">
     <header>
         <div class="headerContent">
             <div class="title">
@@ -15,9 +15,9 @@
             </div>
             <div class="navMenu">
                 <ul>
-                    <li>À propos</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
