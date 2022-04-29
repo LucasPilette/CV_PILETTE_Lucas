@@ -1,7 +1,7 @@
 <div class="container">
     <div class="aboutMe">
         <div class="skills">
-            <h2 class="comps">Languages :</h2>
+            <h2 class="comps">Languages</h2>
             <ul>
                 <li class="listItem">
                     <h3>HTML5</h3><span class="bar"><span class="html "></span></span>
@@ -27,18 +27,24 @@
                 et d'être un meilleur développeur chaque jour.</p>
         </div>
     </div>
+    <div class="pdf1">
+        <a href="/public/pdf/PILETTE Lucas.pdf" id="pdf" download="CV Pilette Lucas" class="hover-underline-animation">
+            Télécharger mon CV en PDF</a>
+    </div>
     <div class="stacks">
         <h2>Stacks techniques</h2>
         <div class="elemStacks">
-            <?php
-        foreach($logos as $logo){
-            echo '<img class="imgStacks" src="'.$logo->source.'" alt="'.$logo->alt.'">';
-        }
-        ?>
+            <div class="slider">
+                <div class="slide-track">
+                    <?php foreach($logos as $logo) : ?>
+                            <div class="slide">
+                                <img class="imgStacks" src="<?=$logo->source?>" alt="<?=$logo->alt?>">
+                                <p class="imgDesc"> <?=$logo->desc?></p>
+                            </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="pdf1">
-        <a href="/public/pdf/PILETTE Lucas.pdf" id="pdf" download="CV Pilette Lucas"> Télécharger mon CV en PDF</a>
     </div>
     <div class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
@@ -46,7 +52,7 @@
     <div class="contact" id="contact">
         <h2>Contact</h2>
         <h3>Un projet ? Une question ? N'hésitez pas à me <span class="greenEffect">contacter</span></h3>
-        <form  method="post" class="contactForm">
+        <form method="post" class="contactForm">
             <div>
                 <label for="mailAdress">Adresse Mail</label>
                 <input type="email" placeholder="exemple@email.com" name="mailAdress">
@@ -59,18 +65,19 @@
                     <input type="text" placeholder="Nom" name="lastname">
                     <span class="pinkEffect"><?= $errors['lastname'] ?? '' ?></span>
                 </div>
-                
-                
+
+
                 <div class="firstname">
                     <label for="firstname">Prénom</label>
                     <input type="text" placeholder="Prénom" name="firstname">
                     <span class="pinkEffect"><?= $errors['firstname'] ?? '' ?></span>
                 </div>
-                
+
             </div>
             <div>
                 <label for="content">Votre message</label>
-                <textarea cols="30" rows="5" placeholder="Veuillez renseigner votre message..." name="content"></textarea>
+                <textarea cols="30" rows="5" placeholder="Veuillez renseigner votre message..."
+                    name="content"></textarea>
                 <span class="pinkEffect"><?= $errors['content'] ?? '' ?></span>
             </div>
             <div class="submitButton">
@@ -82,11 +89,12 @@
     <div class="links">
         <div>
             <img src="/public/src/envelope-fill.svg" alt="Mail Lucas Pilette" class="mailLink">
-            <a href="mailto:pilettelucas@gmail.com" target="_blank" class="logos">Mon mail</a>
+            <a href="mailto:pilettelucas@gmail.com" target="_blank" class="logos hover-underline-animation">Mon mail</a>
         </div>
         <div>
             <img src="/public/src/github.svg" alt="Lien GitHub Lucas Pilette" class="mailLink">
-            <a href="https://github.com/LucasPilette" target="_blank" class="logos">Mon github</a>
+            <a href="https://github.com/LucasPilette" target="_blank" class="logos hover-underline-animation">Mon
+                github</a>
         </div>
     </div>
 </div>

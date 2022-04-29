@@ -21,6 +21,9 @@
                 </ul>
             </div>
         </div>
+        <div class="mobileName">
+            <h2>Lucas Pilette</h2>
+        </div>
         <div class="rollingMenu">
         <nav class="menu d-none d-md-inline">
             <div class="menu__item">
