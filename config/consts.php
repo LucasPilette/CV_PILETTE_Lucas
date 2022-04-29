@@ -10,6 +10,7 @@ $logos = [
     (object)['source' => '/public/src/bootstrap.png','alt' => 'logo Bootstrap','desc' => 'Bootstrap'],
     (object)['source' => '/public/src/php.png','alt' => 'logo PHP','desc' => 'PHP'],
     (object)['source' => '/public/src/mySQL.png','alt' => 'logo mySQL','desc' => 'mySQL'],
+    (object)['source' => '/public/src/codeigniter.svg','alt' => 'logo Code Igniter','desc' => 'Code Igniter'],
     (object)['source' => '/public/src/python.png','alt' => 'logo Python','desc' => 'Python'],
     (object)['source' => '/public/src/vectorpaint.svg','alt' => 'logo GitHub','desc' => 'GitHub'],
     (object)['source' => '/public/src/agile.png','alt' => 'logo Méthodes Agiles','desc' => 'Méthodes agiles'],
