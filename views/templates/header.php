@@ -28,7 +28,7 @@
         <nav class="menu d-none d-md-inline">
             <div class="menu__item">
                 <a class="menu__item-link">Lucas Pilette </a>
-                <img class="menu__item-img" src="/public/src/photolucas.jpg" alt="Photo de Lucas Pilette"/>
+                <img class="menu__item-img" src="/public/src/photo2.webp" alt="Photo de Lucas Pilette"/>
                 <div class="marquee">
                     <div class="marquee__inner">
                         <span>Lucas Pilette &nbsp;</span>
