@@ -46,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $errors['content'] = 'Veuillez saisir votre message .';
     }
 
-    if(empty($errors)){
+    if(empty($errors) && !empty($mail) && !empty($firstName) && !empty($lastname) && !empty($content)){
         $mailState = mail('pilettelucas@gmail.com',"Mail de $lastName $firstName", "$content  Contact : $mail","From : $mail \r\n");
         if($mailState){
             $state = 'Mail envoyé avec succés.';

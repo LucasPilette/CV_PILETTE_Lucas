@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="column">
                         <div class="ItemCard">
-                            <a class="ItemCard_link cover" href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://hopital.'.$_SERVER['HTTP_HOST']?>" target="_blank"></a>
+                            <a class="ItemCard_link cover" href="https://hopital.<?=$_SERVER['HTTP_HOST']?>" target="_blank"></a>
                             <figure class="ItemCard_elem">
                                 <img src="/public/src/hospital.png" alt="">
                                 <span class="shadow cover"></span>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="column">
                         <div class="ItemCard">
-                            <a class="ItemCard_link cover" href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://vikingbattle.'.$_SERVER['HTTP_HOST']?>" target="_blank"></a>
+                            <a class="ItemCard_link cover" href="https://vikingbattle.<?=$_SERVER['HTTP_HOST']?>" target="_blank"></a>
                             <figure class="ItemCard_elem">
                                 <img src="/public/src/battle.png" alt="">
                                 <span class="shadow cover"></span>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="column">
                         <div class="ItemCard">
-                            <a class="ItemCard_link cover" href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://asgardpath.'.$_SERVER['HTTP_HOST']?>" target="_blank"></a>
+                            <a class="ItemCard_link cover" href="https://asgardpath.<?=$_SERVER['HTTP_HOST']?>" target="_blank"></a>
                             <figure class="ItemCard_elem">
                                 <img src="/public/src/asgard.png" alt="">
                                 <span class="shadow cover"></span>
@@ -97,21 +97,25 @@
             </div>
             <div class="elemPortfolioMobile">
                 <div class="imgPortfolioMobile">
-                    <a href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://hopital.'.$_SERVER['HTTP_HOST']?>" target="_blank">
+                    <h3>Projet Hôpital</h3>
+                    <a href="https://hopital.<?=$_SERVER['HTTP_HOST']?>" target="_blank">
                         <img src="/public/src/hospital.png" alt="">
                     </a>
                 </div>
                 <div class="imgPortfolioMobile">
-                    <a href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://vikingbattle.'.$_SERVER['HTTP_HOST']?>" target="_blank">
+                    <h3>Projet Viking Battle</h3>
+                    <a href="https://vikingbattle.<?=$_SERVER['HTTP_HOST']?>" target="_blank">
                     <img src="/public/src/battle.png" alt="">
                     </a>    
                 </div>
                 <div class="imgPortfolioMobile">
-                    <a href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://asgardpath.'.$_SERVER['HTTP_HOST']?>" target="_blank">
+                    <h3>Projet perso Asgard Path</h3>
+                    <a href="https://asgardpath.<?=$_SERVER['HTTP_HOST']?>" target="_blank">
                         <img src="/public/src/asgard.png" alt="">
                     </a>
                 </div>
                 <div class="imgPortfolioMobile">
+                    <h3>Projet flux RSS</h3>
                     <a href="" target="_blank">
                     <img src="/public/src/rss.png" alt="">
                     </a>

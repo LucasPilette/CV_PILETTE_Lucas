@@ -3,5 +3,8 @@ Options +FollowSymlinks
 # rewrite Apache activate
 RewriteEngine On
 
+RewriteCond %{HTTPS} off 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
 # /Accueil -> /controllers/page-home-controller.php
 RewriteRule ^accueil$ /controllers/page-controller-home.php [L]
