@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="column">
                         <div class="ItemCard">
-                            <a class="ItemCard_link cover" href="https://lucaspilette.github.io/Projet_hopital/" target="_blank"></a>
+                            <a class="ItemCard_link cover" href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://hopital.'.$_SERVER['HTTP_HOST']?>" target="_blank"></a>
                             <figure class="ItemCard_elem">
                                 <img src="/public/src/hospital.png" alt="">
                                 <span class="shadow cover"></span>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="column">
                         <div class="ItemCard">
-                            <a class="ItemCard_link cover" href="https://lucaspilette.github.io/Projet-fighter-PHP/" target="_blank"></a>
+                            <a class="ItemCard_link cover" href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://vikingbattle.'.$_SERVER['HTTP_HOST']?>" target="_blank"></a>
                             <figure class="ItemCard_elem">
                                 <img src="/public/src/battle.png" alt="">
                                 <span class="shadow cover"></span>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="column">
                         <div class="ItemCard">
-                            <a class="ItemCard_link cover" href="https://lucaspilette.github.io/Asgard-Path/" target="_blank"></a>
+                            <a class="ItemCard_link cover" href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://asgardpath.'.$_SERVER['HTTP_HOST']?>" target="_blank"></a>
                             <figure class="ItemCard_elem">
                                 <img src="/public/src/asgard.png" alt="">
                                 <span class="shadow cover"></span>
@@ -97,17 +97,17 @@
             </div>
             <div class="elemPortfolioMobile">
                 <div class="imgPortfolioMobile">
-                    <a href="http://hopital.pilette-lucas.fr/home" target="_blank">
+                    <a href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://hopital.'.$_SERVER['HTTP_HOST']?>" target="_blank">
                         <img src="/public/src/hospital.png" alt="">
                     </a>
                 </div>
                 <div class="imgPortfolioMobile">
-                    <a href="http://vikingbattle.pilette-lucas.fr/home" target="_blank">
+                    <a href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://vikingbattle.'.$_SERVER['HTTP_HOST']?>" target="_blank">
                     <img src="/public/src/battle.png" alt="">
                     </a>    
                 </div>
                 <div class="imgPortfolioMobile">
-                    <a href="http://asgardpath.pilette-lucas.fr/home" target="_blank">
+                    <a href="<?=$_SERVER['HTTP_X_REMOTE_PROTO'].'://asgardpath.'.$_SERVER['HTTP_HOST']?>" target="_blank">
                         <img src="/public/src/asgard.png" alt="">
                     </a>
                 </div>
